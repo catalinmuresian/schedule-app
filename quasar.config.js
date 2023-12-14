@@ -90,13 +90,6 @@ module.exports = configure(function (ctx) {
             '^/api': ''
           },
         },
-        // '/imgs/': {
-        //   target: 'https://fsb.testenv.ro/api',
-        //   changeOrigin: true,
-        //   pathRewrite: {
-        //     '^/imgs': ''
-        //   }
-        // }
       }
     },
 
