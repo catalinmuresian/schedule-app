@@ -83,7 +83,7 @@ module.exports = configure(function (ctx) {
       proxy: {
         // proxy all requests starting with /api to jsonplaceholder
         '/api/': {
-          target: 'https://us-central1-appointments-crud-3ce8e.cloudfunctions.net',
+          target: 'https://us-central1-appointments-crud-3ce8e.cloudfunctions.net/api',
           changeOrigin: true,
           pathRewrite: {
             '^/api': ''
