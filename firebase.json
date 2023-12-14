@@ -2,8 +2,12 @@
   "hosting": {
     "rewrites": [
       {
-        "source": "api",
+        "source": "/api/**",
         "function": "api"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ],
     "headers": [
