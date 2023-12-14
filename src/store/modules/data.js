@@ -8,7 +8,7 @@ export const state = {
 export const actions = {
   async get_events ({ commit }) {
     try {
-      const { data } = await axios.get(`/api/`)
+      const { data } = await axios.get(`api/`)
       commit('SET_EVENTS', data)
     } catch (e) {
       console.log(e)
