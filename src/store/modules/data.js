@@ -8,7 +8,7 @@ export const state = {
 export const actions = {
   async get_events ({ commit }) {
     try {
-      const { data } = await axios.get(`https://us-central1-appointments-crud-3ce8e.cloudfunctions.net/api`)
+      const { data } = await axios.get(`/api/`)
       commit('SET_EVENTS', data)
     } catch (e) {
       console.log(e)
