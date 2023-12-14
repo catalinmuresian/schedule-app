@@ -80,16 +80,16 @@ module.exports = configure(function (ctx) {
         type: 'http'
       },
       open: true, // opens browser window automatically
-      // proxy: {
-      //   // proxy all requests starting with /api to jsonplaceholder
-      //   '/api/': {
-      //     target: 'https://us-central1-appointments-crud-3ce8e.cloudfunctions.net/api',
-      //     changeOrigin: true,
-      //     pathRewrite: {
-      //       '^/api': ''
-      //     },
-      //   },
-      // }
+      proxy: {
+        // proxy all requests starting with /api to jsonplaceholder
+        '/api/': {
+          target: 'https://us-central1-appointments-crud-3ce8e.cloudfunctions.net/api',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/api': ''
+          },
+        },
+      }
     },
 
 
