@@ -20,7 +20,12 @@
         ]
       }
     ],
-
+    "rewrites": [
+      {
+        "source": "/**",
+        "function": "api"
+      }
+    ],
     "public": "dist/spa",
     "ignore": [
       "firebase.json",
